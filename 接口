@@ -1,0 +1,17 @@
+温度数据实时数据访问接口：
+http://ynacce.yichiot.com:8013/TempeGwDatas/RealData
+接口方法：POST
+接口参数：body json
+{
+“token”:”hkSKgOQzlWUkYx5saUQlCcCIr9rudQBx”
+}
+
+
+温度历史数据访问接口：
+http://ynacce.yichiot.com:8013/TempeGwDatas/RcdData
+接口方法：POST
+接口参数：body json
+{
+“token”:”hkSKgOQzlWUkYx5saUQlCcCIr9rudQBx”,
+“date”:”20240503”
+}
