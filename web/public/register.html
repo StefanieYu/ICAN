@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+            <input type="text" placeholder="Username" name="username" required>
+            <div class="password-container">
+                <input type="password" placeholder="Password" name="password" required>
+                <img src="icons/eye_slash_icon.png" alt="Eye Icon" class="eye-icon" id="eye-icon-password">
+            </div>
+            <div class="password-container">
+                <input type="password" placeholder="Confirm Password" name="confirm-password" required>
+                <img src="icons/eye_slash_icon.png" alt="Eye Icon" class="eye-icon" id="eye-icon-confirm">
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Sign In</a></p>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>

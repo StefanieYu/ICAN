@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史预警</title>
+    <link rel="stylesheet" href="css/warnninghistory.css">
+</head>
+<body>
+    <div class="container">
+        <h1>历史预警</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>时间</th>
+                    <th>预警信息</th>
+                </tr>
+            </thead>
+            <tbody id="warnings-list" class="warnings-list"></tbody>
+        </table>
+        <div class="pagination">
+            <button id="prev-page">上一页</button>
+            <span id="page-info"></span>
+            <button id="next-page">下一页</button>
+        </div>
+    </div>
+    <script src="js/warnninghistory.js"></script>
+</body>
+</html>

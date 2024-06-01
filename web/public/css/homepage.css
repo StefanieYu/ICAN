@@ -1,0 +1,139 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* 顶部导航栏 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* 用户信息 */
+.user-info {
+    color: #fff;
+    background-color: rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; /* 限制宽度以防止超出屏幕 */
+    flex-shrink: 1; /* 允许在必要时缩小 */
+}
+
+/* 侧边栏 */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 220px;
+    height: calc(100% - 60px);
+    background-color: #343a40;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+    color: #fff;
+    border-left: 4px solid #007BFF;
+}
+
+/* 主要内容区域 */
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-top: 70px;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 960px; /* 设置最大宽度以居中 */
+}
+
+/* 过渡动画 */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 130px;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .sidebar a {
+        padding: 10px 15px;
+    }
+
+    .user-info {
+        max-width: 100%; /* 在小屏幕下，用户信息宽度设置为100% */
+        white-space: normal; /* 允许文本换行 */
+        overflow: visible; /* 取消隐藏溢出内容 */
+        text-overflow: clip; /* 不截断文本 */
+    }
+}

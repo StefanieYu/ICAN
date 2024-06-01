@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Prediction</title>
+    <link rel="stylesheet" href="css/predtemp.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/heatmap.js@2.0.5/build/heatmap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="time-selector">
+            <label for="time-select">Select Time:</label>
+            <select id="time-select"></select>
+        </div>
+        <div class="heatmap-container">
+            <h2>3D Heatmap</h2>
+            <div id="3d-heatmap" class="heatmap"></div>
+        </div>
+        <div class="heatmap-container">
+            <h2>2D Heatmap</h2>
+            <div id="2d-heatmap" class="heatmap"></div>
+        </div>
+        <div class="heatmap-container">
+            <h2>2D Ice Probability Map</h2>
+            <div id="2d-ice-probability-map" class="heatmap"></div>
+        </div>
+        <div class="heatmap-container">
+            <h2>Temperature Predictions and Ice Probability</h2>
+            <canvas id="prediction-chart" class="heatmap"></canvas>
+        </div>
+        <div id="warning-message" class="warning"></div>
+    </div>
+    <script type="module" src="js/predtemp.js"></script>
+</body>
+</html>
