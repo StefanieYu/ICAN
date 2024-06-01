@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Except the web folder and its contents
+!web/public/
+!web/public/**
+!web/server/
+!web/server/**
+
+# Ignore node_modules in case you have any
+
